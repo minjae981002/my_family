@@ -64,9 +64,9 @@ button:focus{
 }
 
 .player video{
-    width:540px;
-    height: 320px;
-    max-width: 1000px;
+    width:100%;
+    height: 100%;
+    max-width: 300px;
 }
 
 .player_info{
@@ -95,21 +95,21 @@ button:focus{
     color: var(--grey-light-color);
 }
 
-.player_info .matadata .title{
-   
+
+
+.player_info .buttonAndtitle .title.clamp{
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
-    overflow: hidden;
-}
+    overflow: hidden;   }
 
-.buttonInfoClass .acitons{
+.acitons{
     display: flex;
     justify-content: space-around;
     margin-bottom: var(--padding);
 }
 
-.buttonInfoClass .acitons button{
+ .acitons button{
     font-size: var(--size-small);
     color: var(--grey-light-color);
 }
@@ -137,7 +137,7 @@ button:focus{
     color: var(--grey-light-color);
     text-align: center;
 }
-.channel .profile img{
+.channel  img{
     width: var(--avtar-size);
     height: var(--avtar-size);
     border-radius: 50%;
@@ -146,6 +146,10 @@ button:focus{
 
 .channel .surcribers{
     color: var(--red-color);
+}
+
+section .info{
+    display:flex;
 }
 
 .upNext{
@@ -180,3 +184,15 @@ button:focus{
     flex-basis: 5%;
     height: 100%;
 }
+
+.infoupNext{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:720px) {
+    .infoupNext{
+        flex-direction: row;
+    }
+}
+
